@@ -20,9 +20,9 @@ At startup you load the file via `ThemeLoader`, then access values via methods i
 
 #### Theme methods
 
-Most of the methods are straightforward. `-Theme.boolForKey()` returns a Bool, and so on.
+Most of the methods are straightforward. `Theme.boolForKey()` returns a Bool, and so on.
 
-Some of the methods require multiple values in the plist file. For instance, `-Theme.fontForKey()` expects the font name as `keyName` and the size as `keyNameSize`. See Theme.swift for more information about these multiple-key values.
+Some of the methods require multiple values in the plist file. For instance, `Theme.fontForKey()` expects the font name as `keyName` and the size as `keyNameSize`. See Theme.swift for more information about these multiple-key values.
 
 #### Inheritance
 
