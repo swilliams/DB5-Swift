@@ -40,6 +40,7 @@ Also, see the Examples folder for the DB5.plist from Vesper.
 
 DB5 — [Brent Simmons](https://github.com/brentsimmons)<br />
 [@brentsimmons](https://twitter.com/brentsimmons)
+
 DB5-Swift — [Scott Williams](https://github.com/swilliams)<br />
 [@swilliams](https://twitter.com/swilliams)
 
