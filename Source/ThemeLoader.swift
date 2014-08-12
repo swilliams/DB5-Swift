@@ -14,8 +14,8 @@ class ThemeLoader: NSObject {
     var defaultTheme: Theme?
     var themes: [Theme]
 
-    override init() {
-        let themesFilePath = NSBundle.mainBundle().pathForResource("themes", ofType: "plist")
+    init(themeFilename filename: String) {
+        let themesFilePath = NSBundle.mainBundle().pathForResource(filename, ofType: "plist")
         let themesDictionary = NSDictionary(contentsOfFile: themesFilePath)
         themes = [Theme]()
         for oneKey in themesDictionary.allKeys {
