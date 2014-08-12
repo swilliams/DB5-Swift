@@ -36,6 +36,12 @@ The demo app is straightforward and small. `AppDelegate` loads the themes. `View
 
 Also, see the Examples folder for the DB5.plist from Vesper.
 
+#### Swift Customizations
+
+ * Prefixes were removed.
+ * Some unit tests were added in the `Tests` folder.
+ * A different constructor was created in `ThemeLoader` to allow you to use a different plist file.
+
 ### Contact
 
 DB5 — [Brent Simmons](https://github.com/brentsimmons)<br />
