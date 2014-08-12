@@ -23,7 +23,7 @@ class ThemeLoaderTest: XCTestCase {
 
     func testInit() {
         // given
-        let loader = ThemeLoader()
+        let loader = ThemeLoader(themeFilename: "themes")
 
         // when
 
@@ -33,7 +33,7 @@ class ThemeLoaderTest: XCTestCase {
 
     func testThemeNamed() {
         // given
-        let loader = ThemeLoader()
+        let loader = ThemeLoader(themeFilename: "themes")
 
         // when
         let theme = loader.themeNamed("Other")
@@ -45,7 +45,7 @@ class ThemeLoaderTest: XCTestCase {
 
     func testThemeNamedNil() {
         // given
-        let loader = ThemeLoader()
+        let loader = ThemeLoader(themeFilename: "themes")
 
         // when
 
