@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>testString</key>
+	<string>oh hi</string>
+	<key>testBool</key>
+	<true/>
+	<key>testInt</key>
+	<integer>100</integer>
+	<key>testFloat</key>
+	<real>20.5</real>
+	<key>testColor</key>
+	<string>#222222</string>
+	<key>testInsetLeft</key>
+	<integer>2</integer>
+	<key>testInsetTop</key>
+	<integer>3</integer>
+	<key>testInsetRight</key>
+	<integer>4</integer>
+	<key>testInsetBottom</key>
+	<integer>5</integer>
+	<key>testFont</key>
+	<string>Helvetica</string>
+	<key>testFontSize</key>
+	<integer>15</integer>
+	<key>testPointX</key>
+	<integer>5</integer>
+	<key>testPointY</key>
+	<integer>3</integer>
+	<key>testSizeWidth</key>
+	<integer>11</integer>
+	<key>testSizeHeight</key>
+	<integer>13</integer>
+	<key>testCurve</key>
+	<string>easeout</string>
+	<key>testAnimationDuration</key>
+	<integer>4</integer>
+	<key>testAnimationDelay</key>
+	<integer>2</integer>
+	<key>testAnimationCurve</key>
+	<string>linear</string>
+	<key>testTextCase</key>
+	<string>lowercase</string>
+</dict>
+</plist>
