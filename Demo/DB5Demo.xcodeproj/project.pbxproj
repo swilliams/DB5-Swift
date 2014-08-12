@@ -13,7 +13,7 @@
 		A7482F4E199ACEE100BAC9EC /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7482F4C199ACEE100BAC9EC /* Theme.swift */; };
 		A7482F4F199ACEE100BAC9EC /* ThemeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7482F4D199ACEE100BAC9EC /* ThemeLoader.swift */; };
 		A7482F55199AD31200BAC9EC /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7482F53199AD31200BAC9EC /* ViewController.xib */; };
-		A7482F57199AD37E00BAC9EC /* Vesper-DB5.plist in Resources */ = {isa = PBXBuildFile; fileRef = A7482F56199AD37E00BAC9EC /* Vesper-DB5.plist */; };
+		A7482F59199AD70200BAC9EC /* DB5.plist in Resources */ = {isa = PBXBuildFile; fileRef = A7482F58199AD70200BAC9EC /* DB5.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,7 @@
 		A7482F4C199ACEE100BAC9EC /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Theme.swift; path = ../../Source/Theme.swift; sourceTree = "<group>"; };
 		A7482F4D199ACEE100BAC9EC /* ThemeLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ThemeLoader.swift; path = ../../Source/ThemeLoader.swift; sourceTree = "<group>"; };
 		A7482F53199AD31200BAC9EC /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
-		A7482F56199AD37E00BAC9EC /* Vesper-DB5.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Vesper-DB5.plist"; path = "../../Example/Vesper-DB5.plist"; sourceTree = "<group>"; };
+		A7482F58199AD70200BAC9EC /* DB5.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DB5.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +64,7 @@
 				A7482F36199ACE4300BAC9EC /* Images.xcassets */,
 				A7482F4C199ACEE100BAC9EC /* Theme.swift */,
 				A7482F4D199ACEE100BAC9EC /* ThemeLoader.swift */,
-				A7482F56199AD37E00BAC9EC /* Vesper-DB5.plist */,
+				A7482F58199AD70200BAC9EC /* DB5.plist */,
 				A7482F2D199ACE4300BAC9EC /* Supporting Files */,
 			);
 			path = DB5Demo;
@@ -135,9 +135,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7482F59199AD70200BAC9EC /* DB5.plist in Resources */,
 				A7482F55199AD31200BAC9EC /* ViewController.xib in Resources */,
 				A7482F37199ACE4300BAC9EC /* Images.xcassets in Resources */,
-				A7482F57199AD37E00BAC9EC /* Vesper-DB5.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
