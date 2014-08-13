@@ -1,6 +1,6 @@
 # DB5-Swift
 
-**DB5** originally by [Q Branch](http://qbranch.co/)
+[**DB5**](https://github.com/quartermaster/DB5) originally by [Q Branch](http://qbranch.co/)
 
 **DB5-Swift** ported by [Scott Williams](http://swilliams.me)
 
