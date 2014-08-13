@@ -1,10 +1,6 @@
 //
 //  AppDelegate.swift
 //  DB5Demo
-//
-//  Created by Scott Williams on 8/12/14.
-//  Copyright (c) 2014 Scott Williams. All rights reserved.
-//
 
 import UIKit
 

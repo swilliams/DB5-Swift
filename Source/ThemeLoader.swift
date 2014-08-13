@@ -1,9 +1,6 @@
 //
 //  ThemeLoader.swift
-//  PhotoScout
-//
-//  Created by Scott Williams on 8/9/14.
-//  Copyright (c) 2014 Scott Williams. All rights reserved.
+//  DB5Demo
 //
 
 import UIKit
