@@ -114,7 +114,7 @@ public class Theme: NSObject {
         if stringIsEmpty(imageName) {
             return nil
         }
-        return UIImage(named: key)
+        return UIImage(named: imageName)
     }
 
     func colorForKey(key: String) -> UIColor {
