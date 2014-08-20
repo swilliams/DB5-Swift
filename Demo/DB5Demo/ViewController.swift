@@ -16,7 +16,7 @@ class ViewController: UIViewController {
 
     }
 
-    required init(coder aDecoder: NSCoder!) {
+    required init(coder aDecoder: NSCoder) {
         self.theme = Theme(fromDictionary: NSDictionary())
         super.init(coder: aDecoder)
     }

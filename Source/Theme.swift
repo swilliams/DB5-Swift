@@ -21,7 +21,7 @@ func colorWithHexString(hexString: String?) -> UIColor {
     if stringIsEmpty(hexString) {
         return UIColor.blackColor()
     }
-    var s: NSMutableString = NSMutableString(string: hexString)
+    var s: NSMutableString = NSMutableString(string: hexString!)
     s.replaceOccurrencesOfString("#", withString: "", options: NSStringCompareOptions.CaseInsensitiveSearch, range: NSMakeRange(0, countElements(hexString!)))
     CFStringTrimWhitespace(s)
     let redString = s.substringToIndex(2)
@@ -60,7 +60,7 @@ public class Theme: NSObject {
     }
 
     // MARK: - Queries
-    private func objectForKey(key: String) -> AnyObject? {
+    func objectForKey(key: String) -> AnyObject? {
         var obj: AnyObject? = themeDictionary[key]
         if obj == nil {
             obj = parentTheme?.objectForKey(key)
@@ -106,6 +106,14 @@ public class Theme: NSObject {
         return obj as CGFloat
     }
 
+    func doubleForKey(key: String) -> Double {
+        let obj: AnyObject? = objectForKey(key)
+        if obj == nil {
+            return 0.0
+        }
+        return obj as Double
+    }
+
     func imageForKey(key: String) -> UIImage? {
         let imageName = stringForKey(key)
         if stringIsEmpty(imageName) {
@@ -121,9 +129,6 @@ public class Theme: NSObject {
         }
         let colorString = stringForKey(key)
         var color = colorWithHexString(colorString)
-        if color == nil {
-            color = UIColor.blackColor()
-        }
         colorCache.setObject(color, forKey: key)
         return color
     }
@@ -151,9 +156,6 @@ public class Theme: NSObject {
             font = UIFont.systemFontOfSize(fontSize)
         } else {
             font = UIFont(name: fontName!, size: fontSize)
-        }
-        if font == nil {
-            font = UIFont.systemFontOfSize(fontSize)
         }
         fontCache.setObject(font, forKey: key)
         return font
