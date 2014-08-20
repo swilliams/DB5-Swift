@@ -4,6 +4,8 @@
 
 **DB5-Swift** ported by [Scott Williams](http://swilliams.me)
 
+*Now up to date with Xcode 6 Beta 6.*
+
 ## App Configuration via Plist
 
 By storing colors, fonts, numbers, booleans, and so on in a plist, we were able to iterate quickly on our app [Vesper](http://vesperapp.co/).
