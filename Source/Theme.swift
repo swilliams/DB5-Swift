@@ -119,7 +119,7 @@ public class Theme: NSObject {
         if stringIsEmpty(imageName) {
             return nil
         }
-        return UIImage(named: imageName)
+        return UIImage(named: imageName!)
     }
 
     func colorForKey(key: String) -> UIColor {
@@ -155,7 +155,7 @@ public class Theme: NSObject {
         if stringIsEmpty(fontName) {
             font = UIFont.systemFontOfSize(fontSize)
         } else {
-            font = UIFont(name: fontName!, size: fontSize)
+            font = UIFont(name: fontName!, size: fontSize)!
         }
         fontCache.setObject(font, forKey: key)
         return font

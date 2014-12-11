@@ -11,7 +11,7 @@ class ThemeLoader: NSObject {
 
     init(themeFilename filename: String) {
         let themesFilePath = NSBundle.mainBundle().pathForResource(filename, ofType: "plist")
-        let themesDictionary = NSDictionary(contentsOfFile: themesFilePath!)
+        let themesDictionary = NSDictionary(contentsOfFile: themesFilePath!)!
         themes = [Theme]()
         for oneKey in themesDictionary.allKeys {
             let key = oneKey as String
