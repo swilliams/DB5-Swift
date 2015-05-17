@@ -4,7 +4,7 @@
 
 **DB5-Swift** ported by [Scott Williams](http://swilliams.me)
 
-*Now up to date with Xcode 6 Beta 6.*
+*Now up to date with Xcode 6.3 and Swift 1.2.*
 
 ## App Configuration via Plist
 
