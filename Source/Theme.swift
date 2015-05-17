@@ -13,7 +13,7 @@ func stringIsEmpty(s: String?) -> Bool {
     if s == nil {
         return true
     }
-    return countElements(s!) == 0
+    return count(s!) == 0
 }
 
 // Picky. Crashes by design.
@@ -22,7 +22,7 @@ func colorWithHexString(hexString: String?) -> UIColor {
         return UIColor.blackColor()
     }
     var s: NSMutableString = NSMutableString(string: hexString!)
-    s.replaceOccurrencesOfString("#", withString: "", options: NSStringCompareOptions.CaseInsensitiveSearch, range: NSMakeRange(0, countElements(hexString!)))
+    s.replaceOccurrencesOfString("#", withString: "", options: NSStringCompareOptions.CaseInsensitiveSearch, range: NSMakeRange(0, count(hexString!)))
     CFStringTrimWhitespace(s)
     let redString = s.substringToIndex(2)
     let greenString = s.substringWithRange(NSMakeRange(2, 2))
@@ -73,7 +73,7 @@ public class Theme: NSObject {
         if obj == nil {
             return false
         }
-        return obj as Bool!
+        return obj as! Bool!
     }
 
     func stringForKey(key: String) -> String? {
@@ -82,10 +82,10 @@ public class Theme: NSObject {
             return nil
         }
         if obj is String {
-            return obj as String!
+            return obj as! String!
         }
         if obj is NSNumber {
-            return (obj as NSNumber!).stringValue
+            return (obj as! NSNumber!).stringValue
         }
         return nil
     }
@@ -95,7 +95,7 @@ public class Theme: NSObject {
         if obj == nil {
             return 0
         }
-        return obj as Int
+        return obj as! Int
     }
 
     func floatForKey(key: String) -> CGFloat {
@@ -103,7 +103,7 @@ public class Theme: NSObject {
         if obj == nil {
             return 0.0
         }
-        return obj as CGFloat
+        return obj as! CGFloat
     }
 
     func doubleForKey(key: String) -> Double {
@@ -111,7 +111,7 @@ public class Theme: NSObject {
         if obj == nil {
             return 0.0
         }
-        return obj as Double
+        return obj as! Double
     }
 
     func imageForKey(key: String) -> UIImage? {
@@ -178,7 +178,7 @@ public class Theme: NSObject {
         if obj == nil {
             return 0.0
         }
-        return obj as Double!
+        return obj as! Double!
     }
 
     func curveForKey(key: String) -> UIViewAnimationOptions {

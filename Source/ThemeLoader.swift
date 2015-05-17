@@ -14,8 +14,8 @@ class ThemeLoader: NSObject {
         let themesDictionary = NSDictionary(contentsOfFile: themesFilePath!)!
         themes = [Theme]()
         for oneKey in themesDictionary.allKeys {
-            let key = oneKey as String
-            let themeDictionary = themesDictionary[key] as NSDictionary
+            let key = oneKey as! String
+            let themeDictionary = themesDictionary[key] as! NSDictionary
             let theme = Theme(fromDictionary: themeDictionary)
             if key.lowercaseString == "default" {
                 defaultTheme = theme
