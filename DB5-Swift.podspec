@@ -70,7 +70,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/food52/DB5-Swift.git", :tag => "f52Latest" }
+  s.source       = { :git => "https://github.com/food52/DB5-Swift.git", :tag => "v0.0.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
